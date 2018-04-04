@@ -2993,7 +2993,7 @@ if ( opt("rpath") ) {
 if ( opt("ssl") ) {
     print "Testing for OpenSSL: ";
     print "\n" if ( opt("verbose") );
-    my $ok = configtest("ssl", "host_qmake", "env", "QTEDIR=$QTEDIR QT_DEPOT=$qt_depot_path SINGLEEXEC=".opt("singleexec"));
+    my $ok = configtest("ssl", "host_qmake", "env", "SINGLEEXEC=".opt("singleexec"));
     if ( $ok ) {
         print "OK\n";
     } else {
